@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/dbank_backend"
+]
+resolver = "2"

@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dbank_backend": {
+      "candid": "src/dbank_backend/dbank_backend.did",
+      "package": "dbank_backend",
+      "type": "rust"
+    },
+    "dbank_frontend": {
+      "dependencies": [
+        "dbank_backend"
+      ],
+      "source": [
+        "src/dbank_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dbank_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
